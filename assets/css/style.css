@@ -1,0 +1,115 @@
+:root{
+    --bg-main:#fbfdfe;
+    --bg-accent:#eff4fb;
+    --accent:#1b6cfe;
+}
+@font-face{
+    font-family: "BankFont";
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'BankFont';
+    background-color: var(--bg-main);
+}
+
+h1{
+    font-weight: 500;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    height:60px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+nav div:first-of-type{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:0.5rem;
+}
+nav ul li{
+
+}
+nav ul a{
+    text-decoration: none;
+    color:#111;
+}
+
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+nav ul a:active{
+    color: var(--accent);
+}
+nav ul a:visited{
+
+}
+
+.hero{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding:5em;
+    justify-content: space-around;
+    background-color: var(--bg-accent);
+  
+
+}
+
+.hero div{
+     background-color: var(--bg-accent);
+}
+
+.hero h1{
+    margin-bottom:1em;
+    font-weight: 700;
+     background-color: var(--bg-accent);
+}
+.hero h1 span{
+    color: var(--accent);
+     background-color: var(--bg-accent);
+}
+.hero>div:first-of-type{
+    flex-basis: 50vw;
+    flex-shrink: 1;
+     background-color: var(--bg-accent);
+}
+
+.hero>div:nth-of-type(2){
+    flex-basis: 49vw;
+    flex-shrink: 2;
+     background-color: var(--bg-accent);
+}
+.hero img{
+    height:60%;
+    width:60%;
+     background-color: var(--bg-accent);
+}
+
+.uppertext{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+     background-color: var(--bg-accent);
+}
+.infotext{
+    font-size: 1.4rem;;
+    line-height: 1.8rem;
+    padding:1rem;
+    background-color: var(--bg-accent);
+}
+.hero a{
+     background-color: var(--bg-accent);
+}
