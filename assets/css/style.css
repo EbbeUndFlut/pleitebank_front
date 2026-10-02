@@ -149,3 +149,56 @@ nav ul a:visited{
     left:5%;
     background:linear-gradient(135deg, #a5c0ff, #c9b8ff);
 }
+
+.pros{
+    background-color: var(--bg-main);
+    display:flex;
+    justify-items: space-around;
+    padding: 4rem  3rem;
+    
+}
+
+.proitem{
+    display:flex;
+    gap:10px;
+    align-items: flex-start;
+    /* flex-basis: 20vw; */
+    text-wrap: wrap ;
+
+}
+
+.proitem p{
+    padding-top: 0.5rem;
+    padding-right:2rem;
+    line-height: 1.5em;
+}
+
+.proitem:not(.proitem:last-of-type)::after{
+    content: "";
+    height:80%;
+    width:3px;
+    margin-right:0.5rem;
+    border-radius: 2rem;
+    background: lightgray;
+    opacity: 0.2;
+}
+.prosicon{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+.bg-blue{
+    background: blue;
+}
+
+.bg-green{
+    background: green;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-lila{
+    background: violet;
+}
